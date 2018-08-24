@@ -3,17 +3,17 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from '../home/home.component';
-import { CursosComponent } from '../cursos/cursos.component';
+// import { CursosComponent } from '../cursos/cursos.component';
 import { LoginComponent } from '../login/login.component';
-import { CursoNaoEncontradoComponent } from '../cursos/curso-nao-encontrado/curso-nao-encontrado.component';
-import { CursoDetalheComponent } from '../cursos/curso-detalhe/curso-detalhe.component';
+// import { CursoNaoEncontradoComponent } from '../cursos/curso-nao-encontrado/curso-nao-encontrado.component';
+// import { CursoDetalheComponent } from '../cursos/curso-detalhe/curso-detalhe.component';
 
 const appRoutes: Routes = [
     { path: '', component: HomeComponent},
     { path: 'login', component: LoginComponent},
-    { path: 'cursos', component: CursosComponent},
-    { path: 'naoEncontrado', component: CursoNaoEncontradoComponent},
-    { path: 'curso/:id', component: CursoDetalheComponent}
+    // { path: 'cursos', component: CursosComponent},
+    // { path: 'naoEncontrado', component: CursoNaoEncontradoComponent},
+    // { path: 'curso/:id', component: CursoDetalheComponent}
 ];
 
 @NgModule({
