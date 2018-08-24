@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import { MaterializeModule } from 'angular2-materialize';
 
 // import { routing } from './app.routing';
-// import { RoutingModule } from './routing/routing.module';
+// import { AppRoutingModule } from './app.routing.module';
 import { CursosModule } from './cursos/cursos.module';
 
 import { AppComponent } from './app.component';
@@ -32,7 +32,7 @@ import { CursosRoutingModule } from './cursos/cursos.routing.module';
     MaterializeModule,
     // routing,
     FormsModule,
-    // RoutingModule,
+    // AppRoutingModule,
     CursosRoutingModule,
     CursosModule
   ],
