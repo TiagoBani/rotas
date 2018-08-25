@@ -1,0 +1,15 @@
+<p>
+  Detalhe do Aluno:
+</p>
+<div *ngIf="aluno else naoEncontrado">
+    <p>ID: {{ aluno.id }}</p>
+    <p>Nome: {{ aluno.nome }}</p>
+    <p>Email: {{ aluno.email }}</p>
+    <!-- Outra forma-->
+    <!--button class="btn waves-effect waves-light" [routerLink]="['editar']">Editar</button-->
+</div>
+<ng-template #naoEncontrado>
+  <p> Aluno não encontrado! </p>  
+</ng-template>
+
+<button class="btn waves-effect waves-light" (click)="editarContato()">Editar</button>
