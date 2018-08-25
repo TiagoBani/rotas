@@ -12,8 +12,9 @@ import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 // import { routing } from './app.routing';
 // import { AppRoutingModule } from './app.routing.module';
 import { CursosModule } from './cursos/cursos.module';
-import { CursosRoutingModule } from './cursos/cursos.routing.module';
+// import { CursosRoutingModule } from './cursos/cursos.routing.module';
 import { AlunosModule } from './alunos/alunos.module';
+import { AppRoutingModule } from './app.routing.module';
 // import { CursosComponent } from './cursos/cursos.component';
 // import { CursoDetalheComponent } from './curso-detalhe/curso-detalhe.component';
 // import { CursosService } from './cursos/cursos.service';
@@ -33,8 +34,8 @@ import { AlunosModule } from './alunos/alunos.module';
     MaterializeModule,
     // routing,
     FormsModule,
-    // AppRoutingModule,
-    CursosRoutingModule,
+    AppRoutingModule,
+    // CursosRoutingModule,
     CursosModule,
     AlunosModule
   ],
