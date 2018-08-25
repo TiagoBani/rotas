@@ -7,6 +7,7 @@
       <a 
       class="collection-item"
       *ngFor="let aluno of alunos" 
+      routerLinkActive="active"
       [routerLink]="[ aluno.id ]">{{ aluno.nome }}</a>
     </div>
     <button class="btn waves-effect waves-light" routerLink="novo">Novo</button>
