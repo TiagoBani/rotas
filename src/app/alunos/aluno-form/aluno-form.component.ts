@@ -13,6 +13,7 @@ export class AlunoFormComponent implements OnInit, OnDestroy {
 
   private aluno: any;
   private inscricao: Subscription;
+  private formMudou: Boolean = false;
 
   constructor(
     private route: ActivatedRoute,
@@ -30,5 +31,14 @@ export class AlunoFormComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.inscricao.unsubscribe();
   }
-
+  onInput() {
+    this.formMudou = true;
+    console.log('mudou');
+  }
+  podeMudarRota() {
+    if ( this.formMudou ) {
+      return confirm('Tem certesa que deseja sair da pagina?');
+    }
+    return true;
+  }
 }
