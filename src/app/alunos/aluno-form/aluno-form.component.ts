@@ -3,13 +3,14 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 
 import { AlunosService } from '../alunos.service';
+import { IFormCanDeactivated } from '../../guards/ifrom-candeactivated';
 
 @Component({
   selector: 'app-aluno-form',
   templateUrl: './aluno-form.component.html',
   styleUrls: ['./aluno-form.component.css']
 })
-export class AlunoFormComponent implements OnInit, OnDestroy {
+export class AlunoFormComponent implements OnInit, OnDestroy, IFormCanDeactivated {
 
   private aluno: any;
   private inscricao: Subscription;
@@ -40,5 +41,8 @@ export class AlunoFormComponent implements OnInit, OnDestroy {
       return confirm('Tem certesa que deseja sair da pagina?');
     }
     return true;
+  }
+  podeDesativar() {
+    return this.podeMudarRota();
   }
 }

@@ -13,10 +13,10 @@ import { CursosGuard } from './guards/cursos.guard';
 
 const appRoutes: Routes = [
     { path: 'cursos', loadChildren: './cursos/cursos.module#CursosModule',
-      canActivate: [AuthGuard], canActivateChild: [CursosGuard]
+      canActivate: [AuthGuard], canActivateChild: [CursosGuard], canLoad: [AuthGuard]
     },
     { path: 'alunos', loadChildren: './alunos/alunos.module#AlunosModule',
-      canActivate: [AuthGuard], // canActivateChild: [AlunosGuard]
+      canActivate: [AuthGuard], canLoad: [AuthGuard], // canActivateChild: [AlunosGuard]
     },
     { path: 'login', component: LoginComponent},
     { path: '', component: HomeComponent,
