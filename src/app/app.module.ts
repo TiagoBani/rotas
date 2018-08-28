@@ -12,6 +12,7 @@ import { LoginComponent } from './login/login.component';
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { AuthService } from './login/auth.service';
 import { CursosGuard } from './guards/cursos.guard';
+import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
 // import { AlunosGuard } from './guards/alunos.guard';
 
 // import { routing } from './app.routing';
@@ -29,6 +30,7 @@ import { CursosGuard } from './guards/cursos.guard';
     HomeComponent,
     LoginComponent,
     CabecalhoComponent,
+    PaginaNaoEncontradaComponent,
     // CursosComponent,
     // CursoDetalheComponent,
     // CursoNaoEncontradoComponent
