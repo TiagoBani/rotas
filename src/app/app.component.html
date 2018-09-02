@@ -1,5 +1,5 @@
-<app-cabecalho></app-cabecalho>
-<!--div>
+<!--app-cabecalho></app-cabecalho-->
+<div>
     <nav *ngIf="mostrarMenu">
         <div class="nav-wrapper">
         <a routerLink="" class="brand-logo right">Rotas ng2</a>
@@ -7,10 +7,10 @@
             <li routerLinkActive="active"><a routerLink="/login" >Login</a></li>
             <li routerLinkActive="active"><a routerLink="/cursos" [queryParams]="{pagina:1}">Cursos</a></li>
             <!--li routerLinkActive="active"><a [routerLink]="[ '/curso', idCurso.value ]" >Curso com ID</a></li-->
-            <!--li routerLinkActive="active"><a routerLink="/alunos" >Alunos</a></li>
+            <li routerLinkActive="active"><a routerLink="/alunos" >Alunos</a></li>
         </ul>
     </div>
-</nav-->
+</nav>
 </div>
 <div class="container">
     <router-outlet></router-outlet>
